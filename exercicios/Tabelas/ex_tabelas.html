@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 600px;
+        }
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightslategray;
+        }
+        th, td {
+            border: 1px solid rgba(0, 0, 0, 0.37);
+            padding: 10px;
+            text-align: center;
+        }
+        tbody > tr.mulheres:nth-child(odd) {
+            background-color: #ffd9df;
+        }
+        tbody > tr.homens:nth-child(even) {
+            background-color: #f0f8ff;
+        }
+
+        tbody > tr > th {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela Filmes</h1>
+    <table>
+        <caption>
+            Tabela de Filmes Favoritos das pessoas
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="mulheres">
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Roberta Jureia</td>
+                <td>Star Wars</td>
+                <td>Sparta</td>
+                <td>Toy Story</td>
+            </tr>
+            <tr class="mulheres">
+                <td>Claudia Junior</td>
+                <td>Naruto</td>
+                <td>Dragon Ball</td>
+                <td>Arcane</td>
+            </tr>
+            <tr class="mulheres">
+                <td>Julieta Morais</td>
+                <td>Carros</td>
+                <td>Princesas</td>
+                <td>Ariel</td>
+            </tr>
+            <tr class="homens">
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Claudio Junior</td> 
+                <td>Kobra Kai</td>
+                <td>Futebol 11</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr class="homens">
+                <td>Don Luiz</td>
+                <td>Matrix</td>
+                <td>Gladiadores</td>
+                <td>Detroit</td> 
+            </tr>   
+            <tr class="homens">
+                <td>Enzo Bergamo</td>
+                <td>Um passo de você</td>
+                <td>Spectral</td>
+                <td>Ultimato</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row">Total</th>
+                <td><strong>18</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
