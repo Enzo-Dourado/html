@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+        .c_sexo_idade {
+            background-color: rgba(0, 255, 255, 0.205);
+        }
+       
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de Tabelas</h1>
+    <table>
+        <colgroup>
+            <col class="c_nome">
+            <col class="c_sexo_idade" span="2">
+            <col class="c_profissao">
+        </colgroup>
+        <caption>
+            Cadastro
+        </caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>Feminino</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Joao</td>
+            <td>Masculino</td>
+            <td>20</td>
+            <td>Médico</td>
+        </tr>
+        <tr>
+            <td>Roberta</td>
+            <td>Feminino</td>
+            <td>23</td>
+            <td>Dentista</td>
+        </tr>
+        <tr>
+            <td>Pedro</td>
+            <td>Masculino</td>
+            <td>22</td>
+            <td>Jogador</td>
+        </tr>
+        <tr>
+            <td>Enzo</td>
+            <td>Masculino</td>
+            <td>20</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Rafaella</td>
+            <td>Feminino</td>
+            <td>21</td>
+            <td>Administradora</td>
+        </tr>
+        <tr>
+            <td>Ryan</td>
+            <td>Masculino</td>
+            <td>23</td>
+            <td>Desenvolvedor</td>
+        </tr>
+        <tr>
+            <td>Andre</td>
+            <td>Masculino</td>
+            <td>26</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Nicholas</td>
+            <td>Masculino</td>
+            <td>23</td>
+            <td>Orador</td>
+        </tr>
+        <tr>
+            <td>Leticia</td>
+            <td>Feminino</td>
+            <td>19</td>
+            <td>Atriz</td>
+        </tr>
+        <tr>
+            <td>Karen</td>
+            <td>Feminino</td>
+            <td>22</td>
+            <td>Engenheira</td>
+        </tr>
+        <tr>
+            <td>Valentina</td>
+            <td>Feminino</td>
+            <td>21</td>
+            <td>Médica</td>
+        </tr>
+        <tr>
+            <td>Guilherme</td>
+            <td>Masculino</td>
+            <td>20</td>
+            <td>Enfermeiro</td>
+        </tr>
+    </table>
+</body>
+</html>
