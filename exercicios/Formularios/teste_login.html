@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando Formulários</title>
+</head>
+<body>
+    <h1>Formulário de Login</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Faça seu Login</legend>
+            <fieldset>
+                <legend>NOME</legend>
+                <p>
+                    <label for="idnome">Nome:</label>
+                    <input type="text" name="nome" id="idnome" minlength="3" maxlength="20" placeholder="Nome" autocomplete="name" required>
+                </p>
+                <p>
+                    <label for="idsobrenome">Sobrenome:</label>
+                    <input type="text" name="sobrenome" id="idsobrenome" minlength="6" maxlength="20" placeholder="Sobrenome" autocomplete="family-name" required>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>DADOS PESSOAIS</legend>
+                <p>
+                    <label for="idemail">Email:</label>
+                    <input type="email" name="email" id="idemail" placeholder="email@gmail.com" autocomplete="email" required>
+                </p>
+                <p>
+                    <label for="idconfemail">Confirmar Email:</label>
+                    <input type="email" name="confemail" id="idconfemail" autocomplete="email" required>
+                </p>
+                <p>
+                    <label for="idsenha">Senha:</label>
+                    <input type="password" name="senha" id="idsenha" minlength="8" maxlength="20" placeholder="********" autocomplete="new-password" required>
+                </p>
+            </fieldset>
+            <p>
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Enviar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
