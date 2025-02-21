@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style-geral.css">
     <link rel="stylesheet" href="css/style-telas.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site Responsivo</h1>
         <i id="burger" class="material-symbols-outlined" onclick="clicMenu()">menu</i>
@@ -48,6 +48,16 @@
                 menu.style.display = 'block'
             }
         }
+        
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                menu.style.display = 'block'
+            }
+            else {
+                menu.style.display = 'none'
+            }
+        }
+    
     </script>
 </body>
 </html>
